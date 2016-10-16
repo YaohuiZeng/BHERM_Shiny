@@ -10,6 +10,6 @@ This repository is just for demonstration purpose. Due to copyright issue, the (
 
 1. The **BHERM-manual.pdf** is the manual of the R package BHERM.
 2. [server.R](https://github.com/YaohuiZeng/BHERM_Shiny/blob/master/server.R) and [ui.R](https://github.com/YaohuiZeng/BHERM_Shiny/blob/master/ui.R) are the R files for the shiny GUI.
-3. The two ```BHERM_shiny.png``` file is a screenshot of the Shiny app.
+3. The ```BHERM_shiny.png``` file is a screenshot of the Shiny app.
 
 
