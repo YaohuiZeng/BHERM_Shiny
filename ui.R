@@ -31,8 +31,6 @@ shinyUI(fluidPage(
       fileInput('file1', 'Load Data file (.csv):',
                 accept = c('.csv')
       ),
-
-#       tags$h4("Select variables:"),
       
 #       wellPanel(
         tags$h4("Select variables:"),
@@ -109,21 +107,10 @@ shinyUI(fluidPage(
                            fluidRow(column(12, verbatimTextOutput("message"))),
                            fluidRow(column(12, verbatimTextOutput("console")))),
                   tabPanel("Data", tableOutput('data')), 
-#                   tabPanel("Plot", 
-#                            plotOutput("plot.dose.pk.safe"),
-#                            plotOutput('plot.pred.safe'),
-#                            plotOutput("plot.dose.pk.eff"),
-#                            plotOutput('plot.pred.eff')                           
-#                   ),
                   tabPanel("Plot", uiOutput("pred.plots")),
-#                   tabPanel("Combine Plot", plotOutput("post.pk"),
-#                                    plotOutput("post.pred")
-#                            ),
                   tabPanel("Trace plot", 
                            plotOutput("trace.plot"),
                            plotOutput("dens.plot"))
-#                   ,tabPanel("Test", uiOutput("post.test")
-#                             plotOutput("post.pred"))
                   )
     )
   )
